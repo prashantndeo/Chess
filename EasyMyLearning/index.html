@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyMylearning - Learn Easily</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">EasyMylearning</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Master New Skills Today</h1>
+            <p>Access high-quality courses and test your knowledge instantly.</p>
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+    </header>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container">
+        <h2 class="section-title">Popular Courses</h2>
+        <div class="course-grid" id="course-container"></div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="container">
+        <h2 class="section-title">Test Your Knowledge</h2>
+        <div class="quiz-card">
+            <div id="quiz-question-container">
+                <h3 id="question-text"></h3>
+                <div id="answer-buttons" class="btn-grid"></div>
+            </div>
+
+            <div id="quiz-result" class="hide">
+                <h3>Your Score: <span id="score">0</span>/5</h3>
+                <button id="restart-btn" class="btn">Restart Quiz</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 EasyMylearning. All rights reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
